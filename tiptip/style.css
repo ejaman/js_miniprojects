@@ -113,7 +113,7 @@ p {
 }
 
 .rest {
-  margin-top: 5em;
+  margin-top: 25%;
   text-align: center;
 }
 .restBtn {
@@ -138,4 +138,33 @@ p {
 }
 
 @media (max-width: 375px) {
+  body {
+    background-color: white;
+  }
+  section {
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: unset;
+  }
+  .left {
+    width: 90%;
+    height: 55%;
+    padding: 2em 0em 2em 1em;
+  }
+  .tip {
+    width: 23%;
+  }
+  .right {
+    background-color: hsl(183, 100%, 15%);
+    padding: 0.5em;
+    width: 95%;
+    height: 45%;
+    border-radius: 15px;
+  }
+
+  .attribution {
+    display: none;
+  }
 }
