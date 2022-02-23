@@ -1,7 +1,141 @@
+body {
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185, 41%, 84%);
+}
+section {
+  border-radius: 15px;
+  width: 700px;
+  height: 350px;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  color: #212121;
+  background-color: hsl(0, 0%, 100%);
+  transform: translate(-50%, -50%);
+  box-shadow: 6px 3px 21px -4px rgba(0, 0, 0, 0.49);
+  padding: 2em;
+}
+p {
+  color: hsl(186, 14%, 43%);
+  font-weight: 400;
+  font-size: 13px;
+}
+.title {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hsl(183, 100%, 15%);
+}
+
+.left {
+  width: 50%;
+  height: 90%;
+  padding-right: 1em;
+  /* background-color: wheat; */
+}
+
+.bill,
+.num {
+  width: 90%;
+  font-family: "Space Mono", monospace;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.3em;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  border: none;
+  outline: none;
+  text-align: right;
+}
+.bill {
+  margin-bottom: 0.7em;
+}
+.btns {
+  padding-bottom: 0.7em;
+}
+
+.tip {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 3px;
+  border: none;
+  padding: 0.5em;
+  margin: 0.3em 0.2em;
+  width: 29%;
+  font-family: "Space Mono", monospace;
+  font-size: 18px;
+  font-weight: 700;
+}
+.tip:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.custom {
+  padding: 0.5em;
+  width: 25%;
+  font-family: "Space Mono", monospace;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  text-align: center;
+}
+.right {
+  background-color: hsl(183, 100%, 15%);
+  padding: 0.5em;
+  width: 49%;
+  height: 95%;
+  border-radius: 15px;
+}
+.font {
+  color: white;
+  font-weight: 600;
+}
+.perP {
+  display: inline-block;
+  margin: 1em 0em 0em 2em;
+  width: 25%;
+  color: white;
+}
+.tipPerP,
+.totalPerP {
+  width: 55%;
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+  font-size: 30px;
+  text-align: right;
+  display: inline-block;
+}
+
+.rest {
+  margin-top: 5em;
+  text-align: center;
+}
+.restBtn {
+  width: 90%;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0.6em;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(185, 14%, 32%);
+}
+
 .attribution {
+  position: relative;
+  top: 700px;
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
 }

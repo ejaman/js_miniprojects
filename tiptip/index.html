@@ -11,19 +11,64 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
+
     <title>TipTip</title>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
+    <div class="title">TipTip</div>
+    <section class="cal">
+      <div class="left">
+        <p>Bill</p>
+        <input class="bill" type="text" placeholder="0" />
+
+        <p>Select Tip %</p>
+        <div class="btns">
+          <button class="tip" value="5">5%</button>
+          <button class="tip" value="10">10%</button>
+          <button class="tip" value="15">15%</button>
+          <button class="tip" value="25">25%</button>
+          <button class="tip" value="50">50%</button>
+          <input class="custom" type="text" placeholder="Custom" />
+        </div>
+
+        <p>Number of People</p>
+        <input class="num" type="text" placeholder="0" />
+      </div>
+
+      <div class="right">
+        <div class="perP">
+          <p class="font">Tip Amount</p>
+          <p>/ person</p>
+        </div>
+        <div class="tipPerP">$0.00</div>
+
+        <div class="perP">
+          <p class="font">Total</p>
+          <p>/ person</p>
+        </div>
+        <div class="totalPerP">$0.00</div>
+        <div class="rest">
+          <button class="restBtn" type="submit">RESET</button>
+        </div>
+      </div>
+    </section>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a href="https://github.com/ejaman/js_miniprojects/tree/master/tiptip"
+        >jaman</a
+      >.
     </div>
   </body>
+  <script src="main.js"></script>
 </html>
