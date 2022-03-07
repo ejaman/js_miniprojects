@@ -1,0 +1,67 @@
+@import "reset.css";
+body {
+  background-color: #f5f6f8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.canvas {
+  width: 1100px;
+  height: 650px;
+  margin-top: 50px;
+  margin-left: 100px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 11px -2px rgba(0, 0, 0, 0.56);
+}
+
+.controller {
+  margin-left: 30px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.controlBrush {
+  margin-bottom: 20px;
+}
+#jsRange {
+  accent-color: black;
+  /* 브러쉬 색상에 따라 변경되게 만들기 */
+}
+
+.controlBtn {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+}
+.controlBtn button {
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 20px;
+  width: 50px;
+  text-align: center;
+  border: 3px solid rgb(214, 211, 211);
+  border-radius: 50px;
+  font-weight: bold;
+}
+.controlBtn button:hover,
+.controlColor:hover {
+  transform: scale(1.02);
+}
+.controller,
+.controlColors {
+  display: flex;
+  flex-direction: column;
+}
+
+.controlColor {
+  width: 45px;
+  height: 45px;
+  margin-top: 5px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 11px -2px rgba(0, 0, 0, 0.56);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>paintingCanvas!</title>
+  </head>
+  <body>
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <div class="controller">
+      <div class="controlBrush">
+        <input
+          type="range"
+          id="jsRange"
+          min="0.1"
+          max="5.0"
+          value="2.5"
+          step="0.1"
+        />
+      </div>
+      <div class="controlColors" id="jsColors">
+        <div class="controlColor" style="background-color: black"></div>
+        <div class="controlColor" style="background-color: white"></div>
+        <div class="controlColor" style="background-color: red"></div>
+        <div class="controlColor" style="background-color: orange"></div>
+        <div class="controlColor" style="background-color: yellow"></div>
+        <div class="controlColor" style="background-color: green"></div>
+        <div class="controlColor" style="background-color: blue"></div>
+        <div class="controlColor" style="background-color: navy"></div>
+        <div class="controlColor" style="background-color: purple"></div>
+      </div>
+      <div class="controlBtn">
+        <button id="jsMode">Fill</button>
+        <button id="jsSave">Save</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
