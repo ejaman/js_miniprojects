@@ -3,13 +3,17 @@ const context = canvas.getContext("2d");
 const color = document.getElementsByClassName("controlColor");
 const range = document.querySelector("#jsRange");
 const fillBtn = document.querySelector("#jsMode");
-const sizeX = document.querySelector("#jsX");
-const sizeY = document.querySelector("#jsY");
+const saveBtn = document.querySelector("#jsSave");
+const sizeX = document.querySelector("#jsX").value;
+const sizeY = document.querySelector("#jsY").value;
 
+//default
 canvas.width = 1000;
 canvas.height = 600;
 context.lineWidth = 10.1;
 context.lineCap = "round";
+context.fillStyle = "white";
+context.fillRect(0, 0, 1000, 600);
 let painting = false;
 
 function stopPaint() {
@@ -33,6 +37,14 @@ function onHandleFill() {
   context.fillStyle = context.strokeStyle;
   context.fillRect(0, 0, 1000, 600);
 }
+
+function onHandleSave() {
+  const img = canvas.toDataURL("image/png");
+  const link = document.createElement("a");
+  link.href = img;
+  link.download = "paintJS 🎨";
+  link.click();
+}
 function onHandleSize(event) {
   console.log(event);
 }
@@ -54,8 +66,11 @@ if (canvas) {
   canvas.addEventListener("mousedown", startPaint);
   canvas.addEventListener("mouseup", stopPaint);
   canvas.addEventListener("mouseleave", stopPaint);
+  canvas.addEventListener("contextmenu", (e) => e.preventDefault());
 }
 Array.from(color).forEach((c) => c.addEventListener("click", OnColorChange));
 range.addEventListener("input", onHandleRange);
 fillBtn.addEventListener("click", onHandleFill);
+saveBtn.addEventListener("click", onHandleSave);
+
 sizeX.addEventListener("input", onHandleSize);
